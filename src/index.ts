@@ -1,5 +1,13 @@
+import dotenv from 'dotenv';
+import server from './server/server';
+
+dotenv.config();
+
 function main() {
-    console.log("Running GabesSquare!");
+  const port = process.env.PORT || '3000';
+  server.app.listen(port, () => {
+    console.log(`Running Gabes Square on port ${3000}`);
+  });
 }
 
 main();
