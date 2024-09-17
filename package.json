@@ -3,7 +3,9 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "lint": "eslint src/**/*.ts"
+    "lint": "eslint src/**/*.ts",
+    "start": "bun run src/index.ts",
+    "start:dev": "bun --watch src/index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",
