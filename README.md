@@ -1,4 +1,4 @@
-# gabessquare
+# Gabe's Square
 
 My personal blog!
 
