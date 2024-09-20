@@ -1,15 +1,24 @@
+/* A overall  */
 body {
-  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
+/* Header */
 .page-header {
-  font-family: 'Times New Roman', Times, serif;
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
   align-items: center;
   background-color: #564263;
   color: #fff;
+  width: 100%;
 }
 
 .header-left {
@@ -55,11 +64,6 @@ body {
   z-index: 1;
 }
 
-.header-nav-menu a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .gabessquare {
   font-weight: bold;
   font-size: 26px;
@@ -75,6 +79,7 @@ body {
   min-height: 100vh;
 }
 
+/* Content List */
 .article-content {
   padding: 10px;
   border: solid 1px;
@@ -82,36 +87,90 @@ body {
   border: solid 1px;
 }
 
+.articles-list {
+  padding: 10px;
+  border: solid 1px;
+  max-width: 850px;
+}
+
+.article-card {
+  /*background-color: red;*/
+  width: 640px;
+  border: solid 1px;
+  padding: 5px;
+}
+
+.article-card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.article-card-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.article-card-views {
+  font-size: 14px;
+}
+
+.article-card-mid {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.article-card-bottom {
+  display: flex;
+  padding: 10px;
+}
+
+.article-card-tags {
+  display: flex;
+}
+
+.article-card-tags li {
+  margin: 0px 2px 0px 2px;
+}
+
+.article-card-tags li:hover {
+  transition: 0.3s;
+  color: #fff;
+  background-color: #674f77;
+}
+
+/* Footer */
 .page-footer {
+  width: 100%;
   margin-top: 10px;
   padding: 10px;
   display: flex;
   justify-content: center;
   background-color: #333;
-  color: #f3f3f3;
+  color: #fff;
+  align-items: center;
 }
 
 .separator {
   height: inherit;
   border-left: 2px solid;
-  margin: 3px;
+  margin: 0px 5px 0px 5px;
 }
 
 .footer-text {
-  margin-right: 5px;
+  margin: 0px 5px 0px 5px;
 }
 
 .footer-text i {
   font-size: 12px;
-  color: red;
 }
 
 .footer-icons {
-  margin-left: 5px;
+  margin: 0px 5px 0 5px;
 }
 
 .footer-icons a {
-  color: inherit;
   margin: 2px;
 }
 
