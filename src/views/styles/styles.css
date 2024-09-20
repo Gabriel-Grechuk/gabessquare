@@ -89,7 +89,7 @@ a {
 
 .articles-list {
   padding: 10px;
-  border: solid 1px;
+  /*border: solid 1px;*/
   max-width: 850px;
 }
 
@@ -97,7 +97,6 @@ a {
   /*background-color: red;*/
   width: 640px;
   border: solid 1px;
-  padding: 5px;
 }
 
 .article-card-title {
@@ -108,17 +107,29 @@ a {
 .article-card-top {
   display: flex;
   justify-content: space-between;
+  /*color: #fff;*/
   padding: 10px;
+  align-items: center;
 }
 
 .article-card-views {
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .article-card-mid {
   display: flex;
   justify-content: space-between;
   padding: 10px;
+}
+
+.card-h-separator {
+  width: 200px;
+  border-bottom: solid 1px;
+  color: #674f77;
+  margin-left: 10px;
 }
 
 .article-card-bottom {
