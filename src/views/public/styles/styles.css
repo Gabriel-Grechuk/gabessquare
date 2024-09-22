@@ -1,0 +1,223 @@
+/* Global */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+  background-color: #564263;
+  color: #fff;
+  width: 100%;
+}
+
+.header-left {
+  align-content: space-around;
+  margin: 10px;
+  padding: 5px;
+}
+
+.header-right {
+  margin: 10px;
+  padding: 10px;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav li {
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.header-nav li:hover {
+  background-color: #674f77;
+}
+
+.header-nav li:hover .header-nav-menu {
+  display: block;
+}
+
+.header-nav li i {
+  font-size: 10px;
+  padding-left: 5px;
+}
+
+.header-nav-menu {
+  display: none;
+  position: absolute;
+  background-color: #564263;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.gabessquare {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.header-text {
+  margin-left: 5px;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #3f3f3f;
+}
+
+/* Content List */
+.article-content {
+  padding: 10px;
+  border: solid 1px;
+  max-width: 850px;
+  border: solid 1px;
+}
+
+.articles-list {
+  padding: 10px;
+  max-width: 850px;
+  color: #3f3f3f;
+}
+
+.date-card {
+  margin: 20px 0px 20px 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.date-card span {
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.date-card span:hover {
+  background-color: #674f77;
+  color: #fff;
+}
+
+.article-card {
+  width: 640px;
+  box-shadow: 1px 1px 5px #564263;
+  margin-bottom: 30px;
+}
+
+.article-card:hover {
+  box-shadow: 3px 3px 10px #564263;
+  transition: 0.3s;
+}
+
+.article-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-card-title {
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.article-link:hover .article-card-title {
+  text-decoration: underline;
+  color: #564263;
+}
+
+.article-card-top {
+  padding: 10px;
+}
+
+.article-card-views {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-card-mid {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card-h-separator {
+  width: 200px;
+  border-bottom: solid 1px;
+  color: #674f77;
+  margin-left: 10px;
+}
+
+.article-card-bottom {
+  display: flex;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.article-card-tags {
+  display: flex;
+  direction: row;
+  max-width: 450px;
+  flex-wrap: wrap;
+}
+
+.article-card-tags li {
+  margin: 0px 2px 0px 2px;
+}
+
+.article-card-tags li:hover {
+  transition: 0.3s;
+  color: #fff;
+  background-color: #674f77;
+}
+
+/* Footer */
+.page-footer {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  align-items: center;
+}
+
+.separator {
+  height: inherit;
+  border-left: 2px solid;
+  margin: 0px 5px 0px 5px;
+}
+
+.footer-text {
+  margin: 0px 5px 0px 5px;
+}
+
+.footer-text i {
+  font-size: 12px;
+}
+
+.footer-icons {
+  margin: 0px 5px 0 5px;
+}
+
+.footer-icons a {
+  margin: 2px;
+}
+
+.footer-icons a i {
+  font-size: 18px;
+}
