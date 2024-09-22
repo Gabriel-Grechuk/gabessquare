@@ -1,4 +1,4 @@
-/* A overall  */
+/* Global */
 body {
   font-family: 'Times New Roman', Times, serif;
   display: flex;
@@ -37,7 +37,6 @@ a {
 }
 
 .header-nav li {
-  /*border: solid 1px;*/
   padding: 10px 20px 10px 20px;
   font-weight: bold;
   transition: 0.3s;
@@ -77,6 +76,7 @@ a {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: #3f3f3f;
 }
 
 /* Content List */
@@ -89,27 +89,56 @@ a {
 
 .articles-list {
   padding: 10px;
-  /*border: solid 1px;*/
   max-width: 850px;
+  color: #3f3f3f;
+}
+
+.date-card {
+  margin: 20px 0px 20px 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.date-card span {
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.date-card span:hover {
+  background-color: #674f77;
+  color: #fff;
 }
 
 .article-card {
-  /*background-color: red;*/
   width: 640px;
-  border: solid 1px;
+  box-shadow: 1px 1px 5px #564263;
+  margin-bottom: 30px;
+}
+
+.article-card:hover {
+  box-shadow: 3px 3px 10px #564263;
+  transition: 0.3s;
+}
+
+.article-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .article-card-title {
   font-size: 20px;
   font-weight: bold;
+  transition: 0.3s;
+}
+
+.article-link:hover .article-card-title {
+  text-decoration: underline;
+  color: #564263;
 }
 
 .article-card-top {
-  display: flex;
-  justify-content: space-between;
-  /*color: #fff;*/
   padding: 10px;
-  align-items: center;
 }
 
 .article-card-views {
@@ -135,10 +164,14 @@ a {
 .article-card-bottom {
   display: flex;
   padding: 10px;
+  font-size: 14px;
 }
 
 .article-card-tags {
   display: flex;
+  direction: row;
+  max-width: 450px;
+  flex-wrap: wrap;
 }
 
 .article-card-tags li {
