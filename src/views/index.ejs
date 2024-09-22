@@ -1,0 +1,72 @@
+<!---
+  data: {
+    header: {
+      homeLink: string;
+      headerText: string;
+
+      tags: {
+        link: string;
+        text: string;
+      }[];
+
+      years: {
+        link: string;
+        text: string;
+      }[];
+    };
+
+    articlesByDate: {
+      date: {
+        link: string;
+        text: string;
+      };
+
+      articles: {
+        articleLink: string;
+        articleTitle: string;
+        articleViews: string;
+        articleBrief: string;
+        articleDate: string;
+        tags: {
+          link: string;
+          text: string;
+        }[];
+      }[];
+    }[];
+
+    footer: {
+      homeLink: string;
+    }
+  };
+--->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= data.title %></title>
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <%- include('components/header', {data: data.header}); %>
+
+  <div class="page-content">
+    <div class="articles-list">
+      <% data.articlesByDate.forEach((articles) => { %>
+        <%- include('components/date-card', {data: articles.date})%>
+          <% articles.articles.forEach((article) => { %>
+            <%- include('components/article-card', { data: article}) %>
+          <% }); %>
+      <% }); %>
+    </div>
+  </div>
+
+  <%- include('components/footer', {data: data.footer}); %>
+</body>
