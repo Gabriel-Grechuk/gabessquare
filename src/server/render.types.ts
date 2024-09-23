@@ -33,9 +33,21 @@ export type FooterData = {
   homeLink: string;
 };
 
-export type indexData = {
+export type IndexData = {
   title: string;
   header: HeaderData;
   articlesByDate: ArticlesByDateData[];
+  footer: FooterData;
+};
+
+export type ArticleData = {
+  title: string;
+  date: string;
+  content: string;
+};
+
+export type PostData = {
+  header: HeaderData;
+  article: ArticleData;
   footer: FooterData;
 };
