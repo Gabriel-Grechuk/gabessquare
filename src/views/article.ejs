@@ -1,0 +1,58 @@
+<%#
+  data: {
+    header: {
+      homeLink: string;
+      headerText: string;
+
+      tags: {
+        link: string;
+        text: string;
+      }[];
+
+      years: {
+        link: string;
+        text: string;
+      }[];
+    };
+
+    article: {
+      title: string;
+      date: string;
+      content: string;
+    };
+
+    footer: {
+      homeLink: string;
+    }
+  };
+%>
+
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= data.article.title %></title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/base16/dracula.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </head>
+
+  <body>
+  <%- include('components/header', {data: data.header}); %>
+
+  <div class="page-content">
+    <%- include('components/article-content', {data: data.article}); %>
+  </div>
+
+  <%- include('components/footer', {data: data.footer}); %>
+  </body>
+</html>
