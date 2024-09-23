@@ -8,6 +8,7 @@ app.set('views', resolve('./src/views'));
 app.use(express.static('./src/views/public'));
 
 app.get('/', routes.index);
+app.get('/post/:id', routes.post);
 
 export default {
   app,
