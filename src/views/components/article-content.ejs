@@ -1,0 +1,18 @@
+<%#
+  data: {
+    title: string;
+    date: string;
+    content: string;
+  };
+%>
+
+
+<div class="article-content">
+  <div class="content-header">
+    <h1 class="content-title"><%= data.title %></h1>
+    <span class="content-date"><%= data.date %></span>
+    <div class="content-separator"></div>
+  </div>
+
+  <%- data.content %>
+</div>

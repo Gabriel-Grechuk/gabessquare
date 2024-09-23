@@ -1,0 +1,44 @@
+<%#
+  data: {
+    homeLink: string;
+    headerText: string;
+
+    tags: {
+      link: string;
+      text: string;
+    }[];
+
+    years: {
+      link: string;
+      text: string;
+    }[];
+  }
+%>
+
+<header class="page-header">
+  <div class="header-left">
+    <a href="<%= data.homeLink %>"><div class="gabessquare">Gabe's Square!</div></a>
+    <span class="header-text"><%= data.headerText %></span>
+  </div>
+  <div class="header-right">
+    <ul class="header-nav">
+      <li>
+        explorar por tags<i class="bi bi-caret-down-fill"></i>
+        <ul class="header-nav-menu">
+          <% data.tags.forEach((tag) => { %>
+            <a href="<%= tag.link %>"><li><%= tag.text %></li></a>
+          <% }); %>
+        </ul>
+      </li>
+
+      <li>
+        explorar por ano<i class="bi bi-caret-down-fill"></i>
+        <ul class="header-nav-menu">
+          <% data.years.forEach((year) => { %>
+            <a href="<%= year.link %>"><li><%= year.text %></li></a>
+          <% }); %>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</header>

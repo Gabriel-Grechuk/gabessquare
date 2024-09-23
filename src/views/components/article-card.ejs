@@ -1,0 +1,40 @@
+<%#
+  data: {
+    articleLink: string;
+    articleTitle: string;
+    articleViews: string;
+    articleBrief: string;
+    articleDate: string;
+    tags: {
+      link: string;
+      text: string;
+    }[];
+  };
+%>
+
+
+<div class="article-card">
+  <div class="article-card-top">
+    <a href="<%= data.articleLink %>"><div class="article-link">
+      <span class="article-card-title"><%= data.articleTitle %></span>
+      <span class="article-card-views"><i class="bi bi-eye-fill"></i><%= data.articleViews %></span>
+      </div></a>
+  </div>
+  <div class="card-h-separator"></div>
+
+  <div class="article-card-mid">
+    <span class="article-card-short">
+      <%= data.articleBrief %>
+    </span>
+  </div>
+
+  <div class="article-card-bottom">
+    <span class="article-card-date"><%= data.articleDate %></span>
+    <div class="separator"></div>
+    <ul class="article-card-tags">
+      <% data.tags.forEach((tag) => { %>
+        <a href="<%= tag.link %>"><li><%= tag.text %><li/></a>
+      <% }); %>
+    <ul>
+  </div>
+</div>
