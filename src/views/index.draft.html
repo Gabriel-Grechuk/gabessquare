@@ -9,6 +9,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/base16/dracula.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
   </head>
 
   <body>
@@ -46,128 +51,90 @@
     </header>
 
     <div class="page-content">
-      <div class="articles-list">
-
-        <div class="date-card">
-          <a href="#"><span>2024</span></a>
+      <div class="article-content">
+        <div class="content-header">
+          <h1 class="content-title">A nice hello world!</h1>
+          <span class="content-date">15 de fevereiro de 2024, 15:40h</span>
+          <div class="content-separator"></div>
         </div>
+        <p>Some lorem ipsum here</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum
+          laoreet nisl nec feugiat. <a href="#">Ut finibus ligula turpis</a>, vel auctor nunc
+          varius et. Fusce ut tellus tristique, scelerisque magna in, sagittis
+          velit. Sed id condimentum odio. Donec ultrices libero mi, non aliquet
+          mi rhoncus non. Proin et diam nec odio accumsan suscipit. Cras
+          vulputate faucibus ultricies. Vestibulum consequat blandit
+          condimentum. Praesent lorem ex, porttitor tempus dictum in,
+          ullamcorper et diam. In hac habitasse platea dictumst. Vivamus vitae
+          neque interdum, luctus arcu quis, porttitor orci. Aenean molestie
+          tellus lectus, et commodo nisl finibus nec. Quisque id nunc pharetra
+          ipsum posuere tempus. Mauris eu libero fringilla, eleifend tortor ut,
+          scelerisque elit. Suspendisse porta lorem sapien, at finibus tortor
+          malesuada tristique. Aliquam in justo augue.
+        </p>
 
+        <h2>Sub title here brow</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum
+          laoreet nisl nec feugiat. Ut finibus ligula turpis, vel auctor nunc
+          varius et. Fusce ut tellus tristique, scelerisque magna in, sagittis
+          velit. Sed id condimentum odio. Donec ultrices libero mi, non aliquet
+          mi rhoncus non. Proin et diam nec odio accumsan suscipit. Cras
+          vulputate faucibus ultricies. Vestibulum consequat blandit
+          condimentum. Praesent lorem ex, porttitor tempus dictum in,
+          ullamcorper et diam. In hac habitasse platea dictumst. Vivamus vitae
+          neque interdum, luctus arcu quis, porttitor orci. Aenean molestie
+          tellus lectus, et commodo nisl finibus nec. Quisque id nunc pharetra
+          ipsum posuere tempus. Mauris eu libero fringilla, eleifend tortor ut,
+          scelerisque elit. Suspendisse porta lorem sapien, at finibus tortor
+          malesuada tristique. Aliquam in justo augue.
+        </p>
 
-        <div class="article-card">
-          <div class="article-card-top">
-            <a href="#"><div class="article-link">
-              <span class="article-card-title">Hello World!</span>
-              <span class="article-card-views"><i class="bi bi-eye-fill"></i>18k</span>
-              </div></a>
-          </div>
-          <div class="card-h-separator"></div>
+        <img src="https://picsum.photos/id/10/2500/1667" alt="My nice image" />
 
-          <div class="article-card-mid">
-            <span class="article-card-short"
-              >This is my first text in this blog hope you like it!
-            </span>
-          </div>
+        <h2>Third paragraph</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum
+          laoreet nisl nec feugiat. Ut finibus ligula turpis, vel auctor nunc
+          varius et. Fusce ut tellus tristique, scelerisque magna in, sagittis
+          velit. Sed id condimentum odio. Donec ultrices libero mi, non aliquet
+          mi rhoncus non. Proin et diam nec odio accumsan suscipit. Cras
+          vulputate faucibus ultricies. Vestibulum consequat blandit
+          condimentum. Praesent lorem ex, porttitor tempus dictum in,
+          ullamcorper et diam. In hac habitasse platea dictumst. Vivamus vitae
+          neque interdum, luctus arcu quis, porttitor orci. Aenean molestie
+          tellus lectus, et commodo nisl finibus nec. Quisque id nunc pharetra
+          ipsum posuere tempus. Mauris eu libero fringilla, eleifend tortor ut,
+          scelerisque elit. Suspendisse porta lorem sapien, at finibus tortor
+          malesuada tristique. Aliquam in justo augue.
+        </p>
 
-          <div class="article-card-bottom">
-            <span class="article-card-date">15 de janeiro de 2024, 16:45h</span>
-            <div class="separator"></div>
-            <ul class="article-card-tags">
-              <a href="#"><li>First Post<li/></a>
-              <a href="#"><li>TypeScript<li/></a>
-              <a href="#"><li>C++<li/></a>
-            <ul>
-          </div>
-        </div>
+        <pre>
+          <code class="language-c">#include &lt;stdio.h&gt;
 
-        <div class="article-card">
-          <div class="article-card-top">
-            <a href="#"><div class="article-link">
-              <span class="article-card-title">Hello World!</span>
-              <span class="article-card-views"><i class="bi bi-eye-fill"></i>18k</span>
-              </div></a>
-          </div>
-          <div class="card-h-separator"></div>
+int main(int argc, char* argv[]){
+  printf("Hello World!!!");
 
-          <div class="article-card-mid">
-            <span class="article-card-short"
-              >This is my first text in this blog hope you like it!
-            </span>
-          </div>
+  return 0;
+}</code>
+        </pre>
 
-          <div class="article-card-bottom">
-            <span class="article-card-date">15 de janeiro de 2024, 16:45h</span>
-            <div class="separator"></div>
-            <ul class="article-card-tags">
-              <a href="#"><li>First Post<li/></a>
-              <a href="#"><li>TypeScript<li/></a>
-              <a href="#"><li>C++<li/></a>
-            <ul>
-          </div>
-        </div>
-
-
-        <div class="date-card">
-          <a href="#"><span>2025</span></a>
-        </div>
-
-        <div class="article-card">
-          <div class="article-card-top">
-            <a href="#"><div class="article-link">
-              <span class="article-card-title">Hello World!</span>
-              <span class="article-card-views"><i class="bi bi-eye-fill"></i>18k</span>
-              </div></a>
-          </div>
-          <div class="card-h-separator"></div>
-
-          <div class="article-card-mid">
-            <span class="article-card-short"
-              >This is my first text in this blog hope you like it!
-            </span>
-          </div>
-
-          <div class="article-card-bottom">
-            <span class="article-card-date">15 de janeiro de 2024, 16:45h</span>
-            <div class="separator"></div>
-            <ul class="article-card-tags">
-              <a href="#"><li>First Post<li/></a>
-              <a href="#"><li>TypeScript<li/></a>
-              <a href="#"><li>C++<li/></a>
-            <ul>
-          </div>
-        </div>
-
-        <div class="article-card">
-          <div class="article-card-top">
-            <a href="#"><div class="article-link">
-              <span class="article-card-title">Hello World!</span>
-              <span class="article-card-views"><i class="bi bi-eye-fill"></i>18k</span>
-              </div></a>
-          </div>
-          <div class="card-h-separator"></div>
-
-          <div class="article-card-mid">
-            <span class="article-card-short"
-              >This is my first text in this blog hope you like it!
-            </span>
-          </div>
-
-          <div class="article-card-bottom">
-            <span class="article-card-date">15 de janeiro de 2024, 16:45h</span>
-            <div class="separator"></div>
-            <ul class="article-card-tags">
-              <a href="#"><li>First Post<li/></a>
-              <a href="#"><li>TypeScript<li/></a>
-              <a href="#"><li>C++<li/></a>
-            <ul>
-          </div>
-        </div>
+        <h3>Sub Sub here</h3>
+        <h4>Sub Sub here</h4>
+        <h5>Sub Sub here</h5>
+        <h6>Sub Sub here</h6>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum
+          laoreet nisl nec feugiat. Ut finibus ligula turpis, vel auctor nunc
+          varius et. Fusce ut tellus tristique, scelerisque magna in, sagittis
+          velit. Sed id condimentum odio. Donec ultrices libero mi, non aliquet
+          mi rhoncus non. Proin et diam nec odio accumsan suscipit. Cras
+          vulputate faucibus ultricies. Vestibulum consequat blandit
+          condimentum. Praesent lorem ex, porttitor tempus dictum in
+        </p>
       </div>
     </div>
-
-
-      </div>
-    </div>
-
 
     <footer class="page-footer">
       <span class="footer-text"><i class="bi bi-c-circle"></i> 2024</span>
